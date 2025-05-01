@@ -1,0 +1,176 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #7dcdf5, #278cdf);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 1.6rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  color: #2277d9;
+}
+
+.header-section {
+  text-align: center;
+  margin: 100px 20px;
+  
+}
+
+.header-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.header-section p {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  /* color: #666; */
+}
+
+.buttons-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin-bottom: 50px; */
+}
+
+.qr-btn,
+.upi-btn {
+  background-color: #2277d9;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.qr-btn:hover,
+.upi-btn:hover {
+  background-color: #3c7cd4;
+}
+
+/* Security Section */
+.security-note {
+  text-align: center;
+  margin-top: 250px;
+  font-size: 0.9rem;
+  /* color: #777; */
+}
+
+/* Popup QR */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.popup-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.qr-image {
+  width: 220px;
+  height: 220px;
+  margin-bottom: 10px;
+}
+
+
+/* Popup Title */
+.popup-title {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+/* footer */
+.footer {
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 12px 12px;
+  text-align: center;
+  color: white;
+}
+
+.social-icons {
+  margin-bottom: 45px;
+}
+
+.social-icons a {
+  margin: 0px 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00c6ff;
+}
+
+.support {
+  /* font-size: 20px; */
+  font-size: 1.5rem;
+
+}
+
+
+footer p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .buttons-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .qr-btn,
+  .upi-btn {
+    width: 90%;
+  }
+
+}
